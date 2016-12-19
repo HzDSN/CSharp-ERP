@@ -16,7 +16,13 @@ namespace CSharp_ERP
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            //Application.Run(new LoginWindow());
+            LoginWindow login = new LoginWindow();
+            login.ShowDialog();
+            if(login.DialogResult == DialogResult.OK)
+            {
+                Application.Run(new Form2());
+            }
         }
     }
 }
