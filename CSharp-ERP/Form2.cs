@@ -22,5 +22,24 @@ namespace CSharp_ERP
             AboutBox about = new AboutBox();
             about.ShowDialog();
         }
+
+        private void 选项OToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form3 form3 = new Form3();
+            form3.MdiParent = this;
+            form3.Show();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            Form3 form3 = new Form3();
+            form3.MdiParent = this;
+            form3.Show();
+        }
+
+        private void 系统设置ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
