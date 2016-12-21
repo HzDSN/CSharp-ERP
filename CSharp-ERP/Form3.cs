@@ -19,8 +19,13 @@ namespace CSharp_ERP
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            treeView1.LabelEdit = true;//可编辑状态。  
+            
             TreeNode node = new TreeNode();
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
 
         }
     }

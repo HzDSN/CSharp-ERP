@@ -48,6 +48,7 @@
             this.员工数据统计ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.退出ToolStripMenuItem = new System.Windows.Forms.ToolStripSeparator();
             this.退出ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -193,12 +194,21 @@
             this.退出ToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.退出ToolStripMenuItem1.Text = "退出";
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Location = new System.Drawing.Point(0, 485);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(1131, 22);
+            this.statusStrip1.TabIndex = 2;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1131, 507);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
@@ -235,5 +245,6 @@
         private System.Windows.Forms.ToolStripMenuItem 员工数据统计ToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator 退出ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 退出ToolStripMenuItem1;
+        private System.Windows.Forms.StatusStrip statusStrip1;
     }
 }

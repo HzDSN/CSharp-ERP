@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -39,7 +41,18 @@ namespace CSharp_ERP
 
         private void 系统设置ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            string connectionString = "server=127.0.0.1; database=myCompany; Trusted_Connection=SSPI";
+            SqlConnection connection = new SqlConnection(connectionString);
+            SqlCommand command = new SqlCommand("SELECT * FROM Employee", connection);
+            connection.Open();
+            SqlDataReader datareader = command.ExecuteReader();
+            if (datareader.HasRows)
+            {
+                while (datareader.Read())
+                {
+                    MessageBox.Show(datareader["ID"] + "n");
+                }
+            }
         }
     }
 }
